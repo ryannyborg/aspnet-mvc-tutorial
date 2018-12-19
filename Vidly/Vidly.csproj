@@ -8,4 +8,13 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\EmptyClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Movies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Movies\_ViewImports.cshtml" />
+  </ItemGroup>
 </Project>
