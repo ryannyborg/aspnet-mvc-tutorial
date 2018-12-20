@@ -52,8 +52,16 @@ namespace Vidly
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+            //app.UseMvc();
+
             app.UseMvc(routes =>
-            {
+            { 
+            //    routes.MapRoute(
+            //        "MoviesByReleaseDate",
+            //        "movies/released/{year}/{month}",
+            //        new { controller = "Movies", action = "ByReleaseDate" },
+            //        new { year = @"\d{4}", month = @"\d{2}"});
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
